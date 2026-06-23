@@ -16,7 +16,7 @@ jobs:
     name: Setup, test, and build project
     steps:
       - name: Checkout
-        uses: actions/checkout@v
+        uses: actions/checkout@v3
 
       - name: Install dependencies
         run: npm ci
@@ -29,7 +29,7 @@ jobs:
     name: Setup project, Authorize GitHub Actions to GCP and Docker Hub, and deploy
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Authenticate for GCP
         id: gcp-auth
